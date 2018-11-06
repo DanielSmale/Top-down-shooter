@@ -22,5 +22,10 @@ public class SmoothLookAtTarget : MonoBehaviour
         }
     }
 
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
+
 
 }
