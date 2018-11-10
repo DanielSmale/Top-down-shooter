@@ -124,7 +124,7 @@ GameObject:
   m_Layer: 0
   m_Name: bulletSpawn1
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -341,7 +341,7 @@ GameObject:
   m_Layer: 0
   m_Name: bulletSpawn2
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -628,7 +628,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -707,7 +707,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a3a0d30a6f530948a2d1476f276764c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  forwardSpeed: 30
+  backwardSpeed: 6
+  turningSpeed: 120
+  drift: 1
+  maxGripSpeed: 3
 --- !u!114 &1703763001
 MonoBehaviour:
   m_ObjectHideFlags: 0
