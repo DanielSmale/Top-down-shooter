@@ -629,7 +629,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -707,18 +707,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a3a0d30a6f530948a2d1476f276764c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 30
+  forwardSpeed: 10
   backwardSpeed: 6
-  turningSpeed: 120
-  drift: 1
-  maxGripSpeed: 3
+  turningSpeed: 150
+  drift: 0.8
+  maxGripSpeed: 0
 --- !u!114 &1703763001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1703762995}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 027ae3242d943ad4e866c61c848de5a5, type: 3}
   m_Name: 

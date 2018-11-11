@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopDownCharacterController2D : MonoBehaviour {
+public class TopDownCharacterController2D : MonoBehaviour
+{
+
     public float forwardSpeed = 30;
     public float backwardSpeed = 6;
     public float turningSpeed = 120;
@@ -52,6 +54,7 @@ public class TopDownCharacterController2D : MonoBehaviour {
     {
         return transform.right * Vector2.Dot(body.velocity, transform.right);
     }
+
     //old game code
     //public float speed = 5.0f;
     //Rigidbody2D rigidbody2D;
