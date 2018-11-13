@@ -15,9 +15,9 @@ TagManager:
   - 
   - Player Damage
   - Enemy Health
-  - 
-  - 
-  - 
+  - Player Health
+  - Enemy Damage
+  - Wall Collision
   - 
   - 
   - 
