@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1703762999}
-  smoothing: 5
+  smoothing: 3
 --- !u!1 &1470962001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,7 +1035,6 @@ GameObject:
   - component: {fileID: 1703762996}
   - component: {fileID: 1703763000}
   - component: {fileID: 1703763002}
-  - component: {fileID: 1703763004}
   - component: {fileID: 1703763003}
   - component: {fileID: 1703763005}
   m_Layer: 10
@@ -1166,7 +1165,7 @@ MonoBehaviour:
   backwardSpeed: 6
   turningSpeed: 150
   drift: 0.8
-  maxGripSpeed: 0
+  maxGripSpeed: 5
 --- !u!114 &1703763002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,24 +1193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497293444eaafa446bb5c0b0f2f687c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1703763004
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1703762995}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 68ec3e8a74fcf8f4c8eb73278242a0e7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1703763005
 MonoBehaviour:
   m_ObjectHideFlags: 0
