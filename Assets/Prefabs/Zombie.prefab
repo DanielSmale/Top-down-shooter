@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4828184941853356}
-  - component: {fileID: 58590199295188582}
   - component: {fileID: 114448254443344586}
+  - component: {fileID: 61122208317285748}
   m_Layer: 11
   m_Name: Trigger
   m_TagString: Untagged
@@ -37,16 +37,15 @@ GameObject:
   m_Component:
   - component: {fileID: 4682770519519394}
   - component: {fileID: 212603237175691188}
-  - component: {fileID: 58324696127231274}
   - component: {fileID: 114866730567476962}
   - component: {fileID: 114241585276042478}
-  - component: {fileID: 114310937444739944}
   - component: {fileID: 114261266009515452}
   - component: {fileID: 114406302205691096}
   - component: {fileID: 114173948286935762}
   - component: {fileID: 114599210969560752}
   - component: {fileID: 114362008661250268}
   - component: {fileID: 114046516985039522}
+  - component: {fileID: 61869332409814700}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Untagged
@@ -61,8 +60,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1542804839399716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.99, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4828184941853356}
   m_Father: {fileID: 0}
@@ -75,29 +74,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1008812670554130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -0.61, z: 0}
+  m_LocalPosition: {x: 0.005, y: 0.399, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4682770519519394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58324696127231274
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542804839399716}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.55}
-  serializedVersion: 2
-  m_Radius: 0.55
---- !u!58 &58590199295188582
-CircleCollider2D:
+--- !u!61 &61122208317285748
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -109,8 +93,43 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
+--- !u!61 &61869332409814700
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1542804839399716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45, y: 0.86}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45, y: 0.86}
+  m_EdgeRadius: 0
 --- !u!114 &114046516985039522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,20 +207,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!114 &114310937444739944
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1542804839399716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfd1af8429fc634c84dcb64203e3a1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1096736107404862, guid: 379af96eca8c230448678b2bbc200dd7,
-    type: 2}
-  adjustmentAngle: 0
 --- !u!114 &114362008661250268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,7 +301,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114310937444739944}
+      - m_Target: {fileID: 0}
         m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
@@ -349,7 +354,7 @@ SpriteRenderer:
   m_SortingLayerID: -255060571
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5af6af0f35006d743bf69281af4c8347, type: 3}
+  m_Sprite: {fileID: 21300042, guid: b5921b2e5ee5e0d479185b7918a9a880, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
