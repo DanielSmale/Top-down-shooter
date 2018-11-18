@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseSmoothLook2D : MonoBehaviour {
-
+public class AimToMouse2D : MonoBehaviour
+{
     public Camera theCamera;
     public float smoothing = 5.0f;
     public float adjustmentAngle = 0.0f;
 
-    private GameObject weapon;
-    private void Start()
-    {
-            
-    }
-
+    
     void Update()
     {
         Vector3 target = theCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -24,3 +19,6 @@ public class MouseSmoothLook2D : MonoBehaviour {
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * smoothing);
     }
 }
+
+	
+
