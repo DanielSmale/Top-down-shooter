@@ -8,12 +8,7 @@ public class MouseSmoothLook2D : MonoBehaviour {
     public float smoothing = 5.0f;
     public float adjustmentAngle = 0.0f;
 
-    private GameObject weapon;
-    private void Start()
-    {
-            
-    }
-
+    
     void Update()
     {
         Vector3 target = theCamera.ScreenToWorldPoint(Input.mousePosition);
