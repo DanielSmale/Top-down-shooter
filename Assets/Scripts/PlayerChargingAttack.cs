@@ -5,23 +5,20 @@ using UnityEngine;
 public class PlayerChargingAttack : MonoBehaviour
 {
     float doubleTapWait;
-    GameObject transform;
     
-    void Start()
-    {
-        transform = GetComponent<transform>;
-    }
+    
+   //void Update()
+   // {
+   //     bool doubleTap = false;
 
-   void Update()
-    {
-        bool doubleTap = false;
+   //     if (Input.GetKeyDown(KeyCode.W))
+   //     {
+   //         Transform
+                
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            
-        }
-        
-            
-    }
-	
+   //     }
+
+
+   // }
+
 }
