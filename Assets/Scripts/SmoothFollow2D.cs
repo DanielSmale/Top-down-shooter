@@ -11,7 +11,7 @@ public class SmoothFollow2D : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 newPos = new Vector3(target.position.x, target.position.y, transform.position.z);
-        transform.position = Vector3.Lerp(transform.position, newPos, (smoothing * 10f));
+        transform.position = Vector3.Lerp(transform.position, newPos, (smoothing * 0.09f));
 
     }      
 
