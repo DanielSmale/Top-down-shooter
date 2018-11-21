@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: c7fea7db272440842a87cebc1ca488cb
   - enabled: 1
+    path: Assets/Scenes/Car shooter level 1.unity
+    guid: cadd73e3b9ff55e4e836cdea72dc981b
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: ec78b74cf6d10754da138588891a2bf1
   - enabled: 1
