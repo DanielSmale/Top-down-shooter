@@ -44,7 +44,7 @@ public class TopDownCharacterController2D : MonoBehaviour
 
         float turnForce = Mathf.Lerp(0, -turningSpeed, body.velocity.magnitude * 0.5f);
         body.angularVelocity = turnInput * turnForce;
-
+        
     }
     Vector2 ForwardVelocity()
     {
