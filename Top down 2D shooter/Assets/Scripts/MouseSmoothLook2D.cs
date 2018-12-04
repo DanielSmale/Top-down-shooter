@@ -8,6 +8,15 @@ public class MouseSmoothLook2D : MonoBehaviour {
     public float smoothing = 5.0f;
     public float adjustmentAngle = 0.0f;
 
+
+    void Start()
+    {
+        if(theCamera == null)
+        {
+            theCamera = Camera.main;
+        }
+    }
+
     
     void Update()
     {
