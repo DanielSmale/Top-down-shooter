@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad015dae4d68c54bbb0166a82cf6433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreToAdd: 10
+  score: 10
 --- !u!114 &114448254443344586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,8 +347,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: Spawn
+      - m_Target: {fileID: 114406302205691096}
+        m_MethodName: OnAddScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -398,7 +398,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -255060571
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300042, guid: b5921b2e5ee5e0d479185b7918a9a880, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

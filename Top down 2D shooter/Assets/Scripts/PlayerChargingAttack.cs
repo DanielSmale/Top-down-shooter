@@ -9,6 +9,7 @@ public class PlayerChargingAttack : MonoBehaviour
     public float boostTime = 4; //How long the boost applies for
 
     public Transform ram; // The transform component of the 'ram' child on the player
+    public Transform[] trail; // The trail child objects
 
     bool doubleTap = false;
     bool isBoosting = false; 
@@ -26,16 +27,12 @@ public class PlayerChargingAttack : MonoBehaviour
     {
         ChargeAttack(); //Once every frame, call the charge attack function
     }
-
-
-
+        
     private void ChargeAttack()
     {
         //https://forum.unity.com/threads/single-tap-double-tap-script.83794/
 
-
-
-
+        
         if (Input.GetKeyDown(KeyCode.W)) // If the w key is down
         {
             if (Time.time < doubleTapWait + .3f) // and if the time is less than double tap wait plus .3 seconds
@@ -60,6 +57,10 @@ public class PlayerChargingAttack : MonoBehaviour
         
         GetComponent<TopDownCharacterController2D>().forwardSpeed = 25; // increase the speed to 25
         ram.gameObject.SetActive(true); // Activate the ram to damage enemies
+        for (int i = 0; i < trail.Length; i++)
+        {
+            trail[i].gameObject.SetActive(true);
+        }
         Invoke("PostBoost", boostTime);
     }
 
@@ -68,6 +69,11 @@ public class PlayerChargingAttack : MonoBehaviour
     {
         GetComponent<TopDownCharacterController2D>().forwardSpeed = 10; // Slow us down after our boost
         ram.gameObject.SetActive(false); // Stop damaging enemies
+        for (int i = 0; i < trail.Length; i++)
+        {
+            trail[i].gameObject.SetActive(false);
+        }
+       
         isBoosting = false; 
     }
 }
