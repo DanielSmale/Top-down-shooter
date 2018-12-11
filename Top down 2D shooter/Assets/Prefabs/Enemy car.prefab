@@ -251,7 +251,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1716551335281248, guid: 1ee3c08b301b511409b505a6ef7c02a5,
     type: 2}
   bulletSpawn: {fileID: 4376645948587994}
-  fireTime: 5
+  fireTime: 3
   smoothing: 5
 --- !u!114 &114362008661250268
 MonoBehaviour:
