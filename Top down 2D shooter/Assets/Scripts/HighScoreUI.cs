@@ -29,16 +29,16 @@ public class HighScoreUI : MonoBehaviour
             highScore = JsonUtility.FromJson<HighScores>(s);
         }
 
-        if(highScore.scores.Count < totalHighScores)
+        if (highScore.scores.Count < totalHighScores)
         {
             int amount = totalHighScores - highScore.scores.Count;
-            for(int i =0; i < amount; i++)
+            for (int i = 0; i < amount; i++)
             {
                 highScore.scores.Add(0);
             }
         }
 
-        if(score > highScore.scores[totalHighScores - 1])
+        if (score > highScore.scores[totalHighScores - 1])
         {
             highScore.scores[totalHighScores - 1] = score;
         }
@@ -48,11 +48,12 @@ public class HighScoreUI : MonoBehaviour
 
         highScoreText.text = "HIGH SCORES\n";
 
-        for(int i= 0; i < totalHighScores; i++)
+        for (int i = 0; i < totalHighScores; i++)
         {
-            if(highScore.scores[i] == score)
+            if (highScore.scores[i] == score)
             {
-                highScoreText.text += "<color==#FF0000FF>" + (i + 1).ToString() + ". " + highScore.scores[i].ToString() + "</color\n";
+                highScoreText.text += "<color=#FF0000FF>" + (i + 1).ToString() + ". " +
+highScore.scores[i].ToString() + "</color\n";
             }
             else
             {
