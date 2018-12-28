@@ -23,9 +23,7 @@ public class HighScoreUI : MonoBehaviour
         {
             highScore = new HighScores();
             highScore.scores = new List<int>();
-        }
-        else
-        {
+        } else {
             highScore = JsonUtility.FromJson<HighScores>(s);
         }
 
