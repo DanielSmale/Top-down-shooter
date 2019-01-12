@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public void StartGame()
+    public void StartLevel1()
     {
         SceneManager.LoadScene("Car shooter level 1");
+    }
+
+    public void StartLevel2()
+    {
+        SceneManager.LoadScene("Car shooter level 2");
     }
 
     public void EndGame()
