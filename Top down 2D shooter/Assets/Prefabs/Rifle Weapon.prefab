@@ -195,4 +195,4 @@ MonoBehaviour:
     type: 2}
   bulletSpawn:
   - {fileID: 4483418591440922}
-  fireTime: 1
+  fireTime: 1.2
