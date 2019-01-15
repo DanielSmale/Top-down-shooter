@@ -947,7 +947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfd1af8429fc634c84dcb64203e3a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1542804839399716, guid: e041d34d5eb36194ab0e1f1c9abce022,
+  prefabToSpawn: {fileID: 1542804839399716, guid: 7c321691cb0d0594395a87756223e10b,
     type: 2}
   adjustmentAngle: 0
 --- !u!114 &391551570
@@ -2970,7 +2970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfd1af8429fc634c84dcb64203e3a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1542804839399716, guid: e041d34d5eb36194ab0e1f1c9abce022,
+  prefabToSpawn: {fileID: 1542804839399716, guid: 3615d2956d5677e4899c604c29747998,
     type: 2}
   adjustmentAngle: 0
 --- !u!114 &1470962003
