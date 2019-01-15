@@ -8,7 +8,7 @@ public class EnemyFire : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
     public float fireTime = 5f;
-    public float smoothing = 5f;
+    public float smoothing = 0.01f;
 
     private bool isFiring = false;
     private bool isAimingAtPlayer;

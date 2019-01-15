@@ -266,7 +266,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1716551335281248, guid: 000e9a7f9ade9c143b1a2b03108dc101,
     type: 2}
   bulletSpawn: {fileID: 4376645948587994}
-  fireTime: 2
+  fireTime: 5
   smoothing: 1
 --- !u!114 &114362008661250268
 MonoBehaviour:
@@ -282,7 +282,7 @@ MonoBehaviour:
   version: 1
   smoothType: 0
   subdivisions: 2
-  iterations: 10
+  iterations: 20
   strength: 0.5
   uniformLength: 0
   maxSegmentLength: 2
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da3c4c088a461342bd1f35cf8029080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 8
+  health: 10
   onDie:
     m_PersistentCalls:
       m_Calls:

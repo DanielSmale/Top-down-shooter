@@ -15,13 +15,8 @@ public class PlayerChargingAttack : MonoBehaviour
     bool isBoosting = false; 
     //Whether or not the player has doubled tapped and is the player currently boosting
 
-    Rigidbody2D body;
-    Transform ColliderTransform;
 
-    void Start()
-    {
-        body = GetComponent<Rigidbody2D>();// Get a reference to the rigidbody component
-    }
+    Transform ColliderTransform;
 
     void Update()
     {
