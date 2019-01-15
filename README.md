@@ -11,7 +11,7 @@ My project for the first game development module
 Controls:
 -W, A, S and D to move
 -Aim with the mouse and mouse left click to fire
--Double tap W to boost
+-Double tap W to do boost attack
 -Swap between picked up weapons with the number keys across the top
 
 
