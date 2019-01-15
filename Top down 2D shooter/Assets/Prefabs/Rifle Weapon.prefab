@@ -82,13 +82,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4f02814b62ca4c9469420ae40236bc23, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 100
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -195,4 +195,4 @@ MonoBehaviour:
     type: 2}
   bulletSpawn:
   - {fileID: 4483418591440922}
-  fireTime: 1.2
+  fireTime: 1.65

@@ -30,16 +30,15 @@ public class PlayerChargingAttack : MonoBehaviour
         
     private void ChargeAttack()
     {
-        //https://forum.unity.com/threads/single-tap-double-tap-script.83794/
 
         
         if (Input.GetKeyDown(KeyCode.W)) // If the w key is down
         {
-            if (Time.time < doubleTapWait + .3f) // and if the time is less than double tap wait plus .3 seconds
+            if (Time.time < doubleTapWait + 0.3f) // and if the time is less than double tap wait plus .3 seconds
             {
-                doubleTap = true; // Make double tap true preventing us from spamming
+                doubleTap = true; // Make double tap true for a limited time preventing us from spamming
             }
-            doubleTapWait = Time.time; // Make the wait time longer 
+            doubleTapWait = Time.time; // Reset the double tap wait
 
         }
 
@@ -61,7 +60,7 @@ public class PlayerChargingAttack : MonoBehaviour
         {
             trail[i].gameObject.SetActive(true);
         }
-        Invoke("PostBoost", boostTime);
+        Invoke("PostBoost", boostTime); //call postboost when the boost time is up
     }
 
 
